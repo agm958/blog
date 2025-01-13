@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonito's Blog</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -58,14 +59,135 @@
     </header>
     <div class="nav-separator"></div>
     <section id="stack">
+        <div class="show-hide-button">
+            <a onclick="showHideBlocks('tech-stack-block')">
+                <div>Tech stack</div>
+            </a>
+        </div>
+
+        <div id="tech-stack-block" class="show-hide-block ">
+            <h2>Skills and Expertise</h2>
+            <ul>
+                <li>
+                    <strong>Programming Languages:</strong> JavaScript, TypeScript, SQL, HTML, CSS, MySQL
+                </li>
+                <li>
+                    <strong>Frameworks:</strong> Node.js, NestJS, Angular, Express.js, Bootstrap
+                </li>
+                <li>
+                    <strong>Object-Relational Mapping (ORM):</strong> TypeORM
+                </li>
+                <li>
+                    <strong>Cloud and Deployment Platforms:</strong> Google Cloud Platform (Cloud Run, CI/CD Pipelines,
+                    Metrics...), App Store, Play Store
+                </li>
+                <li>
+                    <strong>Testing Tools:</strong> Playwright
+                </li>
+                <li>
+                    <strong>Development Methodologies:</strong> Agile, Scrum
+                </li>
+                <li>
+                    <strong>Other Technologies:</strong> REST APIs, JWT Authentication
+                </li>
+                <li>
+                    <strong>API Documentation:</strong> Swagger
+                </li>
+            </ul>
+        </div>
 
 
 
     </section>
-    <section id="current-position">
+    <section id="experience">
+        <div class="show-hide-button">
+            <a onclick="showHideBlocks('work-experience')">
+                <div>Work experience</div>
+            </a>
+        </div>
+
+        <div id="work-experience" class="show-hide-block ">
+            <section>
+                <h2>Experience</h2>
+
+                <div class="experience">
+                    <h3>Backend Web Developer</h3>
+                    <p><strong>Delcom International Ltd.</strong> | January 2024 - Present</p>
+                    <ul>
+                        <li>
+                            <strong>Developed and maintained scalable backend solutions</strong> using Node.js and
+                            NestJS.
+                            <ul>
+                                <li>Data handling, interceptors, validators, middleware, guards...</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Designed and implemented RESTful APIs</strong> with secure JWT-based authentication.
+                            <ul>
+                                <li>Creation of public and private CRUD endpoints with enhanced security for pentesting
+                                    and other techniques.</li>
+                                <li>Implemented Role-Based Access Control (RBAC).</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Optimized database performance</strong> with TypeORM and SQL, improving query
+                            efficiency.
+                        </li>
+                        <li>
+                            <strong>Designed and implemented features and functionalities</strong> using domain-driven
+                            design (DDD).
+                        </li>
+                        <li>
+                            <strong>Automated QA processes</strong> using Playwright, reducing manual testing effort by
+                            80%.
+                            <ul>
+                                <li>Regression coverage</li>
+                                <li>New feature implementation</li>
+                                <li>Backend unit testing</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Cloud DevOps / QA Engineer</h3>
+                    <p><strong>Delcom International Ltd.</strong> | November 2022 - December 2023</p>
+                    <ul>
+                        <li>
+                            <strong>Built CI/CD pipelines</strong> for deployment via GitHub or Bitbucket.
+                        </li>
+                        <li>
+                            <strong>Managed cloud resources</strong> on Google Cloud Platform, focusing on cost
+                            optimization and scalability.
+                        </li>
+                        <li>
+                            <strong>Conducted detailed metrics analysis</strong> to identify performance bottlenecks and
+                            propose solutions.
+                            <ul>
+                                <li>Performed stress testing, load testing, and other techniques.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Identified causes of bugs</strong> via the browser, utilizing full control of the
+                            inspector tools.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
 
     </section>
-    <section id="freelance-projects">
+    <section id="freelance">
+        <div class="show-hide-button">
+            <a onclick="showHideBlocks('freelance-projects')">
+                <div>Freelance projects</div>
+            </a>
+        </div>
+
+        <div id="freelance-projects" class="show-hide-block ">
+            <img src="assets/wip.png" alt="WIP!" title="Work in progress">
+        </div>
 
     </section>
 
@@ -73,7 +195,7 @@
 
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

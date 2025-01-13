@@ -170,3 +170,105 @@ nav {
 
 
 }
+
+/*Show hide blocks*/
+.show-hide-block {
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.show-hide-block.show {
+    display: flex;
+    align-items: center;
+
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
+
+.show-hide-button {
+    background-color: rgba(202, 201, 201, 0.356);
+    border-style: outset;
+    border-radius: 10px;
+    border-color: cadetblue;
+    font-size: 1.5em;
+    width: 99%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 2px;
+    display: block;
+}
+
+.show-hide-button:hover {
+    background-color: rgba(4, 104, 185, 0.356);
+    border-color: cadetblue;
+    font-size: 1.8em;
+}
+
+
+
+section {
+    background-color: #f9f9f9;
+
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    max-width: 800px;
+    /* Limit the width for readability */
+    font-family: 'Arial', sans-serif;
+    /* Clean font style */
+    font-size: larger;
+}
+
+section h2 {
+    color: #333;
+    /* Darker gray for text */
+    font-size: 1.8rem;
+    /* Slightly larger heading */
+    margin-bottom: 15px;
+    /* Space between heading and content */
+    text-align: center;
+    /* Center align the heading */
+}
+
+section ul {
+    list-style-type: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+section li {
+    margin: 10px 0;
+    /* Space between list items */
+    padding: 10px 15px;
+    /* Padding inside list items */
+    background-color: #f9f9f9;
+    /* Subtle gray background for a cleaner look */
+    border-left: 3px solid #007BFF;
+    /* Thinner accent border for minimalism */
+    border-radius: 3px;
+    /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow for depth */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    /* Adds a smooth hover effect */
+}
+
+section li:hover {
+    background-color: #e6f2ff;
+    /* Light blue background on hover */
+    transform: scale(1.02);
+    /* Slightly enlarges the list item on hover */
+}
+
+
+section li strong {
+    color: #007BFF;
+    /* Accent color for strong text */
+    font-weight: 600;
+    /* Slightly bolder */
+}
